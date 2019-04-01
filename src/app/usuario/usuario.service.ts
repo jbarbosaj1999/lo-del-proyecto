@@ -4,9 +4,9 @@ import {Observable} from 'rxjs';
 import {Usuario} from './usuario';
 import data from '../assets/usuarios.json';
 
-const API_URL = '../assets/';
+const API_URL = '../../assets/';
 const usuarios = 'usuarios.json';
-console.log( data)
+
 
 @Injectable()
 export class UsuarioService {
@@ -15,8 +15,11 @@ export class UsuarioService {
 
   getUsuarios(): Observable<Usuario[]>
   {
-    console.log( data)
-    return this.http.get<Usuario[]>(API_URL + usuarios)
+    console.log( this.http.get<Usuario[]>(API_URL + usuarios))
+    return this.http.get<Usuario[]>(API_URL + usuarios);
+    
+    
+
   }
 
 }
