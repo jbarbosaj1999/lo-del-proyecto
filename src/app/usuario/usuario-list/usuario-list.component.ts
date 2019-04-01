@@ -19,6 +19,6 @@ export class UsuarioListComponent implements OnInit {
   }
 
   getUsuarios() : void {
-   this.usuarioService.getUsuarios().subscribe(losU => usuarios = losU)
+   this.usuarioService.getUsuarios().subscribe(losU => this.usuarios = losU)
   }
 }
