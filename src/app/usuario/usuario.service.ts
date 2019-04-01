@@ -12,7 +12,9 @@ export class UsuarioService {
 
   constructor(private http :HttpClient) { }
 
-  getUsuarios(): Observable<Usuario[]>{
+  getUsuarios(): Observable<Usuario[]>
+  {
+    console.log('hola')
     return this.http.get<Usuario[]>(API_URL + usuarios)
   }
 
