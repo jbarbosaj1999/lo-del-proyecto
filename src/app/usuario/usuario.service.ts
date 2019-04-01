@@ -4,7 +4,7 @@ import {Observable} from 'rxjs';
 import {Usuario} from './usuario';
 
 
-const API_URL = '../../assets/';
+const API_URL = '../assets/';
 const usuarios = 'usuarios.json';
 
 @Injectable()
